@@ -22,6 +22,9 @@ return {
         vim.keymap.set("n", "<leader>ct", function()
           vim.cmd.RustLsp("testables")
         end, { desc = "Rust Testables", buffer = bufnr })
+        vim.keymap.set("n", "<leader>ck", function()
+          vim.cmd.RustLsp("expandMacro")
+        end, { desc = "Rust Expand Macro", buffer = bufnr })
       end,
       default_settings = {
         -- rust-analyzer language server configuration

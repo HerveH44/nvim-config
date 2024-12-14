@@ -1,7 +1,5 @@
+-- Keymaps are automatically loaded on the VeryLazy event
+-- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
+-- Add any additional keymaps here
+
 vim.api.nvim_set_keymap("n", "<C-a>", "ggVG", { noremap = true })
-
-vim.keymap.set("n", "<leader>ck", ":RustLsp expandMacro<CR>")
-
-vim.keymap.set("n", "K", function()
-  vim.cmd.RustLsp({ "hover", "actions" })
-end, { silent = true })
